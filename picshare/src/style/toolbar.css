@@ -1,0 +1,169 @@
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+.toolbar {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+    margin-right: 8px;
+    border: 1px solid black;
+    padding: 30px;
+    padding-right: 30px;
+    overflow-y: auto;
+    width: 90%;
+    height: 100%;
+    max-height: 84vh;
+    min-height: 84vh;
+    max-width: 10vw;
+    min-width: 10vw;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+
+}
+
+.toolbar::-webkit-scrollbar {
+    display: none;
+
+}
+
+.color_picker {
+    background: #FFFFFF;
+    border-color: #FFFFFF;
+    width: 100%;
+    height: 60px;
+    color: #FFFFFF;
+}
+
+.apply_filter {
+    height: 20px;
+}
+
+
+.image_filters {
+    margin-top: 30px;
+    color: #2b91ff;
+    background: white;
+    border: #2b91ff solid 1px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.image_filters:hover{
+    background: #2b91ff;
+    color: white;
+}
+
+.tool_category {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    border-bottom: #2b91ff solid 1px;
+}
+
+.tool_subcategory {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.toolbar_icon_row {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.icon_button {
+    margin-top: 20px;
+
+    background: white;
+    margin-right: 10px;
+    padding: 10px;
+    color: #2b91ff;
+    border: 1px solid #2b91ff;
+    border-radius: 5px;
+}
+
+.icon_button:hover{
+    color: white;
+    background: #2b91ff;
+}
+.grey-button {
+    background-color: grey;
+}
+
+.sepia-button{
+    background-color: #dbbe99;
+}
+
+
+
+.toolbar_icon {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background: white;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 2px;
+    border-color: #2b91ff;
+    width: 100%;
+    height: 50px;
+
+}
+
+.text-icon{
+    width: 80%;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.toolbar_icon:hover {
+    color: white;
+    background: white;
+}
+
+.icon {
+    color: #2b91ff;
+    size: 48px;
+}
+
+.drop_down_menu {
+    background: #2b91ff;
+    border: none;
+    padding: 15px;
+}
+
+.btn-sm {
+    background: white;
+    font-size: 15px;
+    width: 100%;
+    border-radius: 4px;
+    border: #2b91ff solid 1px;
+    color: #2b91ff;
+}
+
+.btn-sm:hover{
+    background: #2b91ff;
+    color: white;
+}
+
+.drop_down_menu_title {
+    color: white;
+}
+
+.toolbar_text_options{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tool_row{
+    margin-left: -20px;
+    display: flex;
+    flex-direction: row;
+}

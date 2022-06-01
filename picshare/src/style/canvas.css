@@ -1,0 +1,59 @@
+.canvas {
+    border-radius: 1px;
+    border-style: solid;
+    border-width: 1px;
+    width: 1280px; /* unfortunately for now this is the best way to make it look nice across long screens */
+    height: 800px;
+    display: block;
+    z-index: 4;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+  
+  
+#workspace {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.all_layers{
+    width: 200px;
+    margin-left: 0px;
+    border-radius: 1px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.layer{
+    border-bottom: blue 1px ;
+}
+
+.layer-primary{
+    color: white;
+    background: #007bff;
+}
+
+.layer:hover {
+    filter: brightness(75%);
+    transition: .5s;
+}
+
+.new_layer{
+    display: flex;
+}
+
+.new_layer_name{
+    padding-left: 5px;
+    width: 100px;
+}
+
+.comment_text_input{
+    margin-top: 20px;
+    width: 160px;
+}
+
+.help_button{
+    background: #FFFFFF;
+    border: None;
+}

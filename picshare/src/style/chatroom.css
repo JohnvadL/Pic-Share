@@ -1,0 +1,177 @@
+.input_field {
+  justify-content: flex-end;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  width: 330px;
+}
+
+.message_id {
+  font-weight: bold;
+  font-size: 12px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 8px;
+  word-wrap: break-word;
+  margin-bottom: auto;
+}
+
+.message_content {
+  font-size: 12px;
+  padding-left: 18px;
+  padding-right: 18px;
+  word-wrap: break-word;
+  margin-bottom: 8px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+  transition: .5s;
+}
+
+.message_other {
+  background-color: rgb(226, 226, 226);
+  color: black;
+}
+
+.message_self {
+  background-color: #2b91ff;
+  color: white;
+}
+
+
+.message:hover {
+  filter: brightness(75%);
+  transition: .5s;
+}
+
+.chatroom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 5;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #007bff;
+  border-radius: 10px;
+  box-shadow: 4px 4px 6px 6px rgba(0, 0, 0, 0.2), -2px -2px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.chat_window {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 400px;
+  min-height: 400px;
+  max-width: 350px;
+  min-width: 350px;
+}
+
+.chat_placeholder {
+  font-size: 12px;
+  border-bottom: 3px;
+  border-color: rgba(255, 255, 255, 0.096);
+  border-width: 3px;
+}
+
+.message_board {
+  border-radius: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 370px;
+  min-height: 370px;
+  max-width: 320px;
+  min-width: 320px;
+  background-color:white;
+}
+
+.image_button {
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75%;
+}
+
+.chat_icon {
+  background-image: url('../media/chat.png');
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.hide_icon {
+  background-image: url('../media/arrow-down.png');
+  background-size: 30%;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/* ==================================================================
+ *                           user icon css
+ * ==================================================================
+ */
+
+.user_panel_header {
+  padding-top: 10px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.user_panel_subheader {
+  color: white;
+  font-size: 11px;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  word-wrap: break-word;
+}
+
+.user_panel {
+  background-color: #007bff;
+  border-radius: 15px;
+  margin-right: 8px;
+}
+
+.user_container {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  height: 15%;
+  border-radius: 5px;
+  margin: 5px 5px 0px 5px;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.user_container.user_self {
+  background-color: #2b91ff;
+  color: white;
+}
+
+.user_container.user_other {
+  background-color: white;
+  color: black;
+}
+
+.user_list {
+  background-color: #d8d7d7;
+  overflow-y: auto;
+  height: 68vh;
+}
+
+.user_icon {
+  background-image: url('../media/user.png');
+  margin-left: 10px;
+}
